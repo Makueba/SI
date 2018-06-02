@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: MatWeb-Helper
+Implementation-Version: 1.0
+Built-By: anderson
+Implementation-Vendor-Id: SI.TA1
+Build-Jdk: 1.8.0_171
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/MatWeb-Helper
+Created-By: Maven Integration for Eclipse
+

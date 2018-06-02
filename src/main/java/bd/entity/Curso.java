@@ -5,6 +5,8 @@ import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -21,12 +23,15 @@ public @Data class Curso implements Serializable {
 	@Column(nullable = false, length = 100)
 	private String nome;
 	
-	@ManyToMany
 	@Column(nullable = false)
+	private Integer creditos;
+	
+	@ManyToMany
+	@JoinTable(name = "Materias_Obrigatorias", joinColumns = @JoinColumn(name = "codigo_curso"), inverseJoinColumns = @JoinColumn(name = "codigo_materia"))
 	private List<Materia> obrigatorias;
 	
 	@ManyToMany
-	@Column(nullable = false)
+	@JoinTable(name = "Materias_Optativas", joinColumns = @JoinColumn(name = "codigo_curso"), inverseJoinColumns = @JoinColumn(name = "codigo_materia"))
 	private List<Materia> optativas;
 	
 }

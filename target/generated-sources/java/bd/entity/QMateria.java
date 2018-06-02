@@ -22,6 +22,8 @@ public class QMateria extends EntityPathBase<Materia> {
 
     public final StringPath codigo = createString("codigo");
 
+    public final NumberPath<Integer> creditos = createNumber("creditos", Integer.class);
+
     public final StringPath nome = createString("nome");
 
     public final ListPath<Materia, QMateria> preRequisitos = this.<Materia, QMateria>createList("preRequisitos", Materia.class, QMateria.class, PathInits.DIRECT2);

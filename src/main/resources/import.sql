@@ -1,76 +1,77 @@
---insert into tb_unidade_federativa (id, tx_nome, tx_sigla) values (1, 'Minas Gerais', 'MG');
---insert into tb_unidade_federativa (id, tx_nome, tx_sigla) values (2, 'São Paulo', 'SP');
---insert into tb_unidade_federativa (id, tx_nome, tx_sigla) values (3, 'Rio de Janeiro', 'RJ');
+insert into CURSO (codigo, nome, creditos) values ('949', 'Engenharia Mecatrônica', 274);
 
---insert into tb_pessoa (id, tx_nome) values (1, 'Alexandre');
---insert into tb_pessoa (id, tx_nome) values (2, 'Ana');
---insert into tb_pessoa (id, tx_nome) values (3, 'Bruno');
---insert into tb_pessoa (id, tx_nome) values (4, 'Bruna');
---insert into tb_pessoa (id, tx_nome) values (5, 'Carlos');
---insert into tb_pessoa (id, tx_nome) values (6, 'Carine');
---insert into tb_pessoa (id, tx_nome) values (7, 'Douglas');
---insert into tb_pessoa (id, tx_nome) values (8, 'Debora');
---insert into tb_pessoa (id, tx_nome) values (9, 'Edson');
---insert into tb_pessoa (id, tx_nome) values (10, 'Eliane');
---insert into tb_pessoa (id, tx_nome) values (11, 'Falcatrua');
---insert into tb_pessoa (id, tx_nome) values (12, 'Gigante');
---insert into tb_pessoa (id, tx_nome) values (13, 'Homerica');
---insert into tb_pessoa (id, tx_nome) values (14, 'Iludida');
+insert into MATERIA (codigo, nome, creditos) values ('113034', 'Calculo 1', 6);
 
---insert into tb_pessoa_juridica (id, tx_cnpj) values (11, '1');
---insert into tb_pessoa_juridica (id, tx_cnpj) values (12, '2');
---insert into tb_pessoa_juridica (id, tx_cnpj) values (13, '3');
---insert into tb_pessoa_juridica (id, tx_cnpj) values (14, '4');
+insert into MATERIA (codigo, nome, creditos) values ('113042', 'Calculo 2', 6);
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('113042', '113034');
 
---insert into tb_pessoa_fisica (id, id_unidade_federativa, id_partido, tx_cpf, tp_genero, dt_nascimento, tx_rg_numero, tx_rg_expedidor, dt_rg_expedicao) values (1, 1, null, '1', 'M', current_date, '1', 'SSP', current_date);
---insert into tb_pessoa_fisica (id, id_unidade_federativa, id_partido, tx_cpf, tp_genero, dt_nascimento, tx_rg_numero, tx_rg_expedidor, dt_rg_expedicao) values (2, 2, null, '2', 'F', current_date, '2', 'SSP',  current_date);
---insert into tb_pessoa_fisica (id, id_unidade_federativa, id_partido, tx_cpf, tp_genero, dt_nascimento, tx_rg_numero, tx_rg_expedidor, dt_rg_expedicao) values (3, 3, null, '3', 'M', current_date, '3', 'SSP',  current_date);
---insert into tb_pessoa_fisica (id, id_unidade_federativa, id_partido, tx_cpf, tp_genero, dt_nascimento, tx_rg_numero, tx_rg_expedidor, dt_rg_expedicao) values (4, 1, null, '4', 'F', current_date, '4', 'SSP',  current_date);
---insert into tb_pessoa_fisica (id, id_unidade_federativa, id_partido, tx_cpf, tp_genero, dt_nascimento, tx_rg_numero, tx_rg_expedidor, dt_rg_expedicao) values (5, 2, null, '5', 'M', current_date, '5', 'SSP',  current_date);
---insert into tb_pessoa_fisica (id, id_unidade_federativa, id_partido, tx_cpf, tp_genero, dt_nascimento, tx_rg_numero, tx_rg_expedidor, dt_rg_expedicao) values (6, 3, null, '6', 'F', current_date, '6', 'SSP',  current_date);
---insert into tb_pessoa_fisica (id, id_unidade_federativa, id_partido, tx_cpf, tp_genero, dt_nascimento, tx_rg_numero, tx_rg_expedidor, dt_rg_expedicao) values (7, 2, null, '7', 'M', current_date, '7', 'SSP',  current_date);
---insert into tb_pessoa_fisica (id, id_unidade_federativa, id_partido, tx_cpf, tp_genero, dt_nascimento, tx_rg_numero, tx_rg_expedidor, dt_rg_expedicao) values (8, 3, null, '8', 'F', current_date, '8', 'SSP',  current_date);
---insert into tb_pessoa_fisica (id, id_unidade_federativa, id_partido, tx_cpf, tp_genero, dt_nascimento, tx_rg_numero, tx_rg_expedidor, dt_rg_expedicao) values (9, 3, null, '9', 'M', current_date, '9', 'SSP',  current_date);
---insert into tb_pessoa_fisica (id, id_unidade_federativa, id_partido, tx_cpf, tp_genero, dt_nascimento, tx_rg_numero, tx_rg_expedidor, dt_rg_expedicao) values (10, 3, null, '10', 'F', current_date, '10', 'SSP',  current_date);
+insert into MATERIA (codigo, nome, creditos) values ('113051', 'Calculo 3', 6);
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('113051', '113042');
 
---insert into tb_funcionario (id_pessoa_juridica, id_pessoa_fisica) values (11, 1);
---insert into tb_funcionario (id_pessoa_juridica, id_pessoa_fisica) values (12, 2);
---insert into tb_funcionario (id_pessoa_juridica, id_pessoa_fisica) values (13, 3);
---insert into tb_funcionario (id_pessoa_juridica, id_pessoa_fisica) values (14, 4);
---insert into tb_funcionario (id_pessoa_juridica, id_pessoa_fisica) values (11, 4);
---insert into tb_funcionario (id_pessoa_juridica, id_pessoa_fisica) values (11, 5);
---insert into tb_funcionario (id_pessoa_juridica, id_pessoa_fisica) values (13, 6);
---insert into tb_funcionario (id_pessoa_juridica, id_pessoa_fisica) values (13, 7);
+insert into MATERIA (codigo, nome, creditos) values ('122408', 'CIENCIAS DO AMBIENTE', 2);
+insert into MATERIA (codigo, nome, creditos) values ('116351', 'CIRCUITOS DIGITAIS', 6);
+insert into MATERIA (codigo, nome, creditos) values ('164887', 'CONTROLE DIGITAL', 4);
+insert into MATERIA (codigo, nome, creditos) values ('167657', 'CONTROLE PARA AUTOMAÇÃO', 4);
+insert into MATERIA (codigo, nome, creditos) values ('168874', 'DESENHO MECANICO ASSISTIDO POR COMPUTADOR 1', 6);
+insert into MATERIA (codigo, nome, creditos) values ('167673', 'ESTÁGIO CURRICULAR EM ENGENHARIA MECATRÔNICA', 12);
+insert into MATERIA (codigo, nome, creditos) values ('116319', 'ESTRUTURAS DE DADOS', 4);
+insert into MATERIA (codigo, nome, creditos) values ('118001', 'FISICA 1', 4);
+insert into MATERIA (codigo, nome, creditos) values ('118010', 'FISICA 1 EXPERIMENTAL', 2);
 
---insert into tb_partido (id, tx_nome, nu_numero, id_candidato) values (1, 'MDB', 15, 2);
---insert into tb_partido (id, tx_nome, nu_numero, id_candidato) values (2, 'PT', 13, 5);
---insert into tb_partido (id, tx_nome, nu_numero, id_candidato) values (3, 'PSDB', 45, 8);
+insert into MATERIA (codigo, nome, creditos) values ('118028', 'FISICA 2', 4);
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('118028', '118001');
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('118028', '113034');
 
---update tb_pessoa_fisica set id_partido = 1 where id = 1;
---update tb_pessoa_fisica set id_partido = 2 where id = 2;
---update tb_pessoa_fisica set id_partido = 3 where id = 3;
---update tb_pessoa_fisica set id_partido = 1 where id = 4;
---update tb_pessoa_fisica set id_partido = 2 where id = 5;
---update tb_pessoa_fisica set id_partido = 3 where id = 6;
---update tb_pessoa_fisica set id_partido = 2 where id = 7;
---update tb_pessoa_fisica set id_partido = 2 where id = 8;
---update tb_pessoa_fisica set id_partido = 3 where id = 9;
---update tb_pessoa_fisica set id_partido = null where id = 10;
+insert into MATERIA (codigo, nome, creditos) values ('118036', 'FISICA 2 EXPERIMENTAL', 4);
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('118036', '118001');
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('118036', '113034');
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('118036', '118010');
 
---insert into tb_doacao (id, id_partido, id_pessoa, nu_valor) values (1, 1, 1, 10);
---insert into tb_doacao (id, id_partido, id_pessoa, nu_valor) values (2, 2, 2, 20);
---insert into tb_doacao (id, id_partido, id_pessoa, nu_valor) values (3, 3, 3, 30);
---insert into tb_doacao (id, id_partido, id_pessoa, nu_valor) values (4, 1, 4, 40);
---insert into tb_doacao (id, id_partido, id_pessoa, nu_valor) values (5, 2, 5, 50);
---insert into tb_doacao (id, id_partido, id_pessoa, nu_valor) values (7, 3, 6, 60);
---insert into tb_doacao (id, id_partido, id_pessoa, nu_valor) values (8, 1, 7, 70);
---insert into tb_doacao (id, id_partido, id_pessoa, nu_valor) values (9, 2, 8, 80);
---insert into tb_doacao (id, id_partido, id_pessoa, nu_valor) values (10, 3, 9, 90);
---insert into tb_doacao (id, id_partido, id_pessoa, nu_valor) values (11, 1, 10, 100);
---insert into tb_doacao (id, id_partido, id_pessoa, nu_valor) values (12, 2, 11, 110);
---insert into tb_doacao (id, id_partido, id_pessoa, nu_valor) values (13, 3, 12, 120);
---insert into tb_doacao (id, id_partido, id_pessoa, nu_valor) values (14, 1, 13, 130);
---insert into tb_doacao (id, id_partido, id_pessoa, nu_valor) values (15, 2, 14, 140);
---insert into tb_doacao (id, id_partido, id_pessoa, nu_valor) values (16, 3, 1, 150);
---insert into tb_doacao (id, id_partido, id_pessoa, nu_valor) values (17, 1, 2, 160);
---insert into tb_doacao (id, id_partido, id_pessoa, nu_valor) values (18, 2, 3, 170);
+insert into MATERIA (codigo, nome, creditos) values ('118044', 'FISICA 3', 4);
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('118044', '118028');
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('118044', '113042');
+
+insert into MATERIA (codigo, nome, creditos) values ('118052', 'FISICA 3 EXPERIMENTAL', 4);
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('118052', '118028');
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('118052', '113042');
+
+insert into MATERIA (codigo, nome, creditos) values ('167347', 'INSTRUMENTACAO DE CONTROLE', 4);
+
+insert into MATERIA (codigo, nome, creditos) values ('168823', 'INTRODUÇÃO À CIÊNCIA DOS MATERIAIS', 3);
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('168823', '114626');
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('168823', '114634');
+
+insert into MATERIA (codigo, nome, creditos) values ('113093', 'INTRODUCAO A ALGEBRA LINEAR', 4);
+
+insert into MATERIA (codigo, nome, creditos) values ('168769', 'MECANICA 1', 4);
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('168769', '118001');
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('168769', '113034');
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('168769', '113093');
+
+insert into MATERIA (codigo, nome, creditos) values ('168777', 'MECANICA 2', 4);
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('168777', '118001');
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('168777', '113051');
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('168777', '113093');
+
+insert into MATERIA (codigo, nome, creditos) values ('169510', 'MECANICA DOS MATERIAIS 1', 4);
+insert into MATERIA_REQUISITO (id_materia, id_requisito) values ('169510', '168769');
+
+insert into MATERIA (codigo, nome, creditos) values ('116394', 'ORGANIZACAO E ARQUITETURA DE COMPUTADORES', 4);
+insert into MATERIA (codigo, nome, creditos) values ('115045', 'PROBABILIDADE E ESTATÍSTICA', 4);
+insert into MATERIA (codigo, nome, creditos) values ('116599', 'PROCESSAMENTO EM TEMPO REAL', 4);
+insert into MATERIA (codigo, nome, creditos) values ('168238', 'SISTEMAS HIDRAULICOS E PNEUMATICOS', 4);
+insert into MATERIA (codigo, nome, creditos) values ('168742', 'SISTEMAS DE MEDIÇÃO', 3);
+insert into MATERIA (codigo, nome, creditos) values ('168912', 'SISTEMAS INTEGRADOS DE MANUFATURA', 4);
+insert into MATERIA (codigo, nome, creditos) values ('168831', 'TECNOLOGIA DE FABRICACAO 1', 4);
+insert into MATERIA (codigo, nome, creditos) values ('164399', 'TECNOLOGIAS COMANDO NUMERICO', 4);
+insert into MATERIA (codigo, nome, creditos) values ('167681', 'TRABALHO DE GRADUAÇÃO 1', 6);
+insert into MATERIA (codigo, nome, creditos) values ('167665', 'TRABALHO DE GRADUAÇÃO 2', 6);
+insert into MATERIA (codigo, nome, creditos) values ('116424', 'TRANSMISSÃO DE DADOS', 4);	
+insert into MATERIA (codigo, nome, creditos) values ('168840', 'TRANSPORTE DE CALOR E MASSA', 4);
+insert into MATERIA (codigo, nome, creditos) values ('113069', 'VARIAVEL COMPLEXA 1', 6);
+insert into MATERIA (codigo, nome, creditos) values ('114626', 'QUIMICA GERAL TEORICA', 4);
+insert into MATERIA (codigo, nome, creditos) values ('114634', 'QUIMICA GERAL EXPERIMENTAL', 2);	
+insert into MATERIA (codigo, nome, creditos) values ('113476', 'ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES', 6);
+
+
+

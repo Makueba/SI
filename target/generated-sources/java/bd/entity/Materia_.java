@@ -11,6 +11,7 @@ public abstract class Materia_ {
 
 	public static volatile SingularAttribute<Materia, String> codigo;
 	public static volatile SingularAttribute<Materia, String> nome;
+	public static volatile SingularAttribute<Materia, Integer> creditos;
 	public static volatile ListAttribute<Materia, Materia> preRequisitos;
 
 }

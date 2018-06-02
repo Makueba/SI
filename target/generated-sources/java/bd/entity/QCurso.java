@@ -22,6 +22,8 @@ public class QCurso extends EntityPathBase<Curso> {
 
     public final StringPath codigo = createString("codigo");
 
+    public final NumberPath<Integer> creditos = createNumber("creditos", Integer.class);
+
     public final StringPath nome = createString("nome");
 
     public final ListPath<Materia, QMateria> obrigatorias = this.<Materia, QMateria>createList("obrigatorias", Materia.class, QMateria.class, PathInits.DIRECT2);

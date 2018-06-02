@@ -13,6 +13,7 @@ public abstract class Curso_ {
 	public static volatile ListAttribute<Curso, Materia> optativas;
 	public static volatile SingularAttribute<Curso, String> nome;
 	public static volatile ListAttribute<Curso, Materia> obrigatorias;
+	public static volatile SingularAttribute<Curso, Integer> creditos;
 
 }
 

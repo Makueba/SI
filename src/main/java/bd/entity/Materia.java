@@ -18,14 +18,26 @@ import lombok.ToString;
 @SuppressWarnings("serial")
 public @Data class Materia implements Serializable {
 	@Id
-	@Column(nullable = false)
+	@Column(length=10)
 	private String codigo;
 	
 	@Column(nullable = false)
 	private String nome;
+	
+	@Column(nullable = false)
+	private Integer creditos;
 	
 	@ManyToMany
 	@JoinTable(name = "Materia_requisito", joinColumns = @JoinColumn(name = "id_Materia"), inverseJoinColumns = @JoinColumn(name = "id_Requisito"))
 	private List<Materia> preRequisitos;
 	
 }
+
+
+
+
+
+
+
+
+
